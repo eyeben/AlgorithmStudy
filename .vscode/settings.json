@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "python_study\\Scripts\\python.exe"
+    "python.pythonPath": "python_study\\Scripts\\python.exe",
+    "editor.parameterHints.enabled": false
 }
