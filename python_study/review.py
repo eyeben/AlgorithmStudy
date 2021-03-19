@@ -31,3 +31,13 @@ print(set_b.difference(set_a) )
 print(set_b-set_a)
 
 tmp=list(set_a)
+
+# dict
+dic={
+    "name":"park",
+    "sex":"M",
+    "phone":"000"
+}
+
+for k,v in dic.items():
+    print(k,"is",v,)
