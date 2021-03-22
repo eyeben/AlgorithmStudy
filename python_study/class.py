@@ -15,4 +15,12 @@ test=Infos()
 #test.func2()
 
 
+class mother():
+    def __init__(self,hey):
+        self.hey=hey
+class sibling(mother):
+    def __init__(self,hey,boi):
+        super().__init__(hey)
+        self.boi=boi
+
 print("a")
