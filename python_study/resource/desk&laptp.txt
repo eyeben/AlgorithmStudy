@@ -1,0 +1,14 @@
+-----------------------<DESKTOP>---------------------------
+
+
+C:/Users/qkreh/Desktop/AlgorithmStudy/python_study/resource/database.db
+"command": "PYTHON",
+
+
+----------------------=-<LAPTOP>---------------------------
+
+
+
+C:/Users/impjt/OneDrive/바탕 화면/AlgorithmStudy/python_study/resource/database.db
+
+"command": "python_study\\Scripts\\python.exe",
