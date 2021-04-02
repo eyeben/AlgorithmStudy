@@ -37,14 +37,32 @@ def hash_func(key):
 def save_data(data, value):
     serial=get_key(data)
     hash_address=hash_func(serial)
-    if hash_table[hash_address]==0:
-        hash_table[hash_address]=[[serial,value]]
-    else:
-        for i in range(hash_address,len(hash_table)):
-            if hash_table[i]==0:
-                hash_table[i]=[[serial, value]]
-                return
-            elif hash_table[i][0]==serial:
-                hash_table[i][1]=value
-        
+
+    for i in range(hash_address,len(hash_table)):
+        if hash_table[i]==0:
+            hash_table[i]=[serial, value]
+            return
+        elif hash_table[i][0]==serial:
+            hash_table[i][1]=value
+            return
+    return None
+
 def read_data(data):
+    serial=get_key(data)
+    hash_address=hash_func(serial)
+    print(hash_address)
+    print(hash_table[hash_address])
+    for i in range(hash_address, len(hash_table)):
+        if int(hash_table[i][0])==serial:
+            return hash_table[i][1]
+    return None
+
+
+
+print (get_key('db') % 8)
+print (get_key('da') % 8)
+print (get_key('dh') % 8)
+print("------------")
+save_data('da', '01200123123')
+save_data('dh', '3333333333')
+print(read_data('dh'))
