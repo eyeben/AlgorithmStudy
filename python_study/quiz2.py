@@ -96,7 +96,7 @@
 
 
 import datetime
-now =datetime.datetime.date
-
+now =datetime.datetime.now()
+now1=now.strftime('%Y-%m-%d %H:%M:%S')
 print(now)
 print(now1)
