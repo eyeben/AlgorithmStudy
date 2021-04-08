@@ -53,7 +53,7 @@ def read_data(data):
     print(hash_address)
     print(hash_table[hash_address])
     for i in range(hash_address, len(hash_table)):
-        if int(hash_table[i][0])==serial:
+        if hash_table[i][0]==serial:
             return hash_table[i][1]
     return None
 
