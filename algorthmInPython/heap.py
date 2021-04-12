@@ -24,10 +24,19 @@ class Heap:
                 self.heap_array[index],self.heap_array[index//2]=self.heap_array[index//2],self.heap_array[index]
             index//=2
         return True
+
     def move_down(self.popped_idx):
         left_child_idx=popped_idx*2
         right_child_idx=popped_idx*2+1
-        if 
+        end_idx=len(self.heap_array)-1
+        if left_child_idx > end_idx:
+            return False
+        elif left_child_idx == end_idx:
+            return
+
+
+
+
     def delete(self, data):
         index=self.heap_array.index(data)
         end_in=len(self.heap_array)-1
